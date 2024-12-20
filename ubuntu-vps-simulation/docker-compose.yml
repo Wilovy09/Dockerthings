@@ -1,0 +1,8 @@
+services:
+  ubuntu-server:
+    build: .
+    container_name: ubuntu-server
+    ports:
+      - 8080:8080
+    environment:
+      - TEST="ENV_TEST"
