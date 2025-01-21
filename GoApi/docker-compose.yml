@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  go-app:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
